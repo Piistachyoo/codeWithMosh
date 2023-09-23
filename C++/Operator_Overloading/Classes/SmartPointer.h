@@ -9,6 +9,8 @@ class SmartPointer {
     SmartPointer();
     explicit SmartPointer(int *ptr);
     ~SmartPointer();
+
+    int &operator*();
 };
 
 #endif

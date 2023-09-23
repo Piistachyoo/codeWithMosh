@@ -8,3 +8,5 @@ SmartPointer::~SmartPointer() {
     delete ptr;
     this->ptr = nullptr;
 }
+
+int &SmartPointer::operator*() { return *this->ptr; }

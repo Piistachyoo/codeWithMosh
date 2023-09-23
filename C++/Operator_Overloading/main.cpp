@@ -1,3 +1,4 @@
+#include "Classes/Array.h"
 #include "Classes/Length.h"
 #include "Classes/Person.h"
 #include "Classes/Point.h"
@@ -9,8 +10,7 @@
 using namespace std;
 
 int main() {
-    Point L1(10, 20);
-    Point L2 = L1;
-    Length S1{22};
-    cout << L1++ << L1 << ++L2;
+    Length L1{10};
+    int x = static_cast<int>(L1);
+    cout << x << endl << L1 << endl;
 }
