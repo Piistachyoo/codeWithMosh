@@ -9,10 +9,11 @@ class TextBox : public Widget {
     std::string value = "string fady :)\n";
 
   public:
-    TextBox() = default;
-    TextBox(const std::string &val);
+    void draw() const final override;
     void setValue(std::string _str);
     std::string getValue();
+
+    ~TextBox();
 };
 
 #endif

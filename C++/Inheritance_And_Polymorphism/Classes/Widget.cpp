@@ -1,4 +1,5 @@
 #include "Widget.h"
+#include <iostream>
 
 void Widget::enable() { enabled = true; }
 

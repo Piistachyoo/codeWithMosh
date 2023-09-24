@@ -3,6 +3,8 @@
 
 #include "Shape.h"
 
-class Rectangle : public Shape {};
+class Rectangle : public Shape {
+    void draw() const override;
+};
 
 #endif // RECTANGLE_H_
