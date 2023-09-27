@@ -1,0 +1,7 @@
+CPPFILES := $(wildcard *.cpp) $(wildcard Classes/*.cpp)
+CPPOBJ := $(CPPFILES:.cpp=.o)
+INC := -I *.h *.hpp Classes/*.hpp Classes/*.h
+FILENAME := output
+CC := g++
+CPPFLAGS := -g -std=c++20 -Wall 
+LIB_PATH = ./lib
